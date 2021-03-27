@@ -72,7 +72,7 @@ Legal Prose, about filter,
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
 may use the skip button if you wish to setup the deata yourself.
 
-![Deploy Nodes](../screenshots/1DeployNodes.png)
+![](../screenshots/1DeployNodes.png)
 
 ![Run Nodes](screenshots/2RunNodes.png)
 
