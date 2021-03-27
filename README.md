@@ -72,7 +72,7 @@ Legal Prose, about filter,
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
 may use the skip button if you wish to setup the deata yourself.
 <br>
-![Deploy Nodes](screenshots/1DeployNodes.png)
+![Deploy Nodes](./screenshots/1DeployNodes.PNG)
 
 ![Run Nodes](screenshots/2RunNodes.png)
 
@@ -93,7 +93,7 @@ response is shown on the same window.
 5. The farm produces can be filtered using name( if there are multiple offers from Farmers) or just all the available 
 farm produces. The linear ID of the farm produce has to be copied to propose agreement on it.
 <br>
-![All FarmProduce] screenshots/7FarmProduceAll.png)
+![All FarmProduce](screenshots/7FarmProduceAll.png)
 ![Filter FarmProduce](screenshots/8Filter.png)
 
 6. The Buyer issues cash using Corda in-built self issue cash. It should be more than minGuaranteed Price mentioned in
