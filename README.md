@@ -71,7 +71,7 @@ Each request can be executed by clicking on `Send` button.The responses can be s
 Legal Prose, about filter, 
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
 may use the skip button if you wish to setup the deata yourself.
-![Deploy Nodes](screenshots/1DeployNodes.png)
+![Deploy Nodes](./screenshots/1DeployNodes.png)
 ![Run Nodes](screenshots/2RunNodes.png)
 
 2. Once the nodes are fully started, run the webserver for each node in separate command prompt windows.
