@@ -68,14 +68,13 @@ Open the Postman and import the collection file from projectroot/postman folder 
 Each request can be executed by clicking on `Send` button.The responses can be seen on the same window. 
 ## Usage
 
-Legal Prose, about filter, 
+
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
-may use the skip button if you wish to setup the deata yourself.
 
 ![Deploy Nodes](./screenshots/1DeployNodes.PNG)
 ![Run Nodes](./screenshots/2RunNodes.PNG)
 
-2. Once the nodes are fully started, run the webserver for each node in separate command prompt windows.
+2. Once the nodes are fully started, run the webserver for each node(Farmer and OrganicMarket) in separate command prompt windows.
  
 ![Node Started](./screenshots/3NodeStarted.PNG)
 ![Run Webserver](./screenshots/4Webserver.PNG)
@@ -89,7 +88,7 @@ response is shown on the same window.
 
 ![Create FarmProduce](./screenshots/6CreateFarmProduce.PNG)
 
-5. The farm produces can be filtered using name( if there are multiple offers from Farmers) or just all the available 
+5. The farm produces can be filtered using name (if there are multiple offers from Farmers) or just all the available 
 farm produces. The linear ID of the farm produce has to be copied to propose agreement on it.
 
 ![All FarmProduce](./screenshots/7FarmProduceAll.PNG)
@@ -97,7 +96,7 @@ farm produces. The linear ID of the farm produce has to be copied to propose agr
 
 6. The Buyer issues cash using Corda in-built self issue cash. It should be more than minGuaranteed Price mentioned in
 Farm Produce for agreement proposal.
-<br>
+
 ![Issue Cash](./screenshots/9IssueCash.PNG)
 
 7. The Farm Agreement can be proposed with the copied Farm Produce Linear id. Make sure to add correct path for legal
