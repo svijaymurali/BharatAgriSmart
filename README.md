@@ -71,63 +71,63 @@ Each request can be executed by clicking on `Send` button.The responses can be s
 Legal Prose, about filter, 
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
 may use the skip button if you wish to setup the deata yourself.
-<br>  <hr>  
+<br>
 ![Deploy Nodes](screenshots/1DeployNodes.png)
 
 ![Run Nodes](screenshots/2RunNodes.png)
 
 2. Once the nodes are fully started, run the webserver for each node in separate command prompt windows.
- <br>  <hr>  
+ <br> 
 ![Node Started](screenshots/3NodeStarted.png)
 ![Run Webserver](screenshots/4Webserver.png)
 
 3. After the webserver start, open the Postman to import the JSON collection to run the client.
-<br>  <hr>  
+<br>
 ![Postman] screenshots/5Postman.png)
 
 4. The farm produce can be created with pre-filled values or new values can also be entered. After clicking on send,
 response is shown on the same window.
-<br>  <hr>  
+<br>
 ![Create FarmProduce](screenshots/6CreateFarmProduce.png)
 
 5. The farm produces can be filtered using name( if there are multiple offers from Farmers) or just all the available 
 farm produces. The linear ID of the farm produce has to be copied to propose agreement on it.
-<br>  <hr>  
+<br>
 ![All FarmProduce] screenshots/7FarmProduceAll.png)
 ![Filter FarmProduce](screenshots/8Filter.png)
 
 6. The Buyer issues cash using Corda in-built self issue cash. It should be more than minGuaranteed Price mentioned in
 Farm Produce for agreement proposal.
-<br>  <hr>  
+<br>
 ![Issue Cash](screenshots/9IssueCash.png)
 
 7. The Farm Agreement can be proposed with the copied Farm Produce Linear id. Make sure to add correct path for legal
 prose attachment .zip file.
-<br>  <hr>  
+<br>
 ![Propose FarmAgreement](screenshots/10ProposeAgreement.png)
 
 8. Farmer/Seller queries Farm Agreements and copies its Linear ID to accept the proposal.
-<br>  <hr>  
+<br>
 ![Query FarmAgreement](screenshots/11QueryFarmAgreement.png)
 ![Accept FarmAgreement](screenshots/12AcceptAgreement.png)
 
 9. Status of an agreement changed to IN_CONTRACT from IN_PROPOSAL after acceptance can be seen.
-<br>  <hr>  
+<br>
 ![Status FarmAgreement](screenshots/13CheckAgreementInContract.png)
 
 10. Farm Agreement settled with its Linear ID and Agreed amount.
-<br>  <hr>  
+<br> 
 ![Settle FarmAgreement](screenshots/14SettleAgreement.png)
 
 11. Status of an agreement changed to SETTLED from IN_CONTRACT.
-<br>  <hr>  
+<br>
 ![SettleStatus FarmAgreement](screenshots/15StatusSettled.png)
 
 12. Ownership of farm produce is changed to buyer/organic market and agreed amount is transferred to seller/farmer.
 There are two methods available in API to check farm produce states: 
 To check all unconsumed states - ./farm-produce-states, 
 To check all farm produce states - ./farm-produce-states-all
-<br>  <hr>  
+<br> 
 ![Status FarmProduce](screenshots/16StatusFarmProduce.png)
 ![Status FarmProduceAll](screenshots/17StatusFarmProduceAll.png)
 ![Status Cash](screenshots/18CashTransfer.png)
