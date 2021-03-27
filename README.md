@@ -71,66 +71,66 @@ Each request can be executed by clicking on `Send` button.The responses can be s
 Legal Prose, about filter, 
 1. Navigate to project folder and run the Gradle task for deploying nodes, followed by runnodes.
 may use the skip button if you wish to setup the deata yourself.
-<br>
-![Deploy Nodes](./screenshots/1DeployNodes.PNG)
 
-![Run Nodes](screenshots/2RunNodes.png)
+![Deploy Nodes](./screenshots/1DeployNodes.PNG)
+![Run Nodes](./screenshots/2RunNodes.PNG)
 
 2. Once the nodes are fully started, run the webserver for each node in separate command prompt windows.
- <br> 
-![Node Started](screenshots/3NodeStarted.png)
-![Run Webserver](screenshots/4Webserver.png)
+ 
+![Node Started](./screenshots/3NodeStarted.PNG)
+![Run Webserver](./screenshots/4Webserver.PNG)
 
 3. After the webserver start, open the Postman to import the JSON collection to run the client.
-<br>
-![Postman](screenshots/5Postman.png)
+
+![Postman](./screenshots/5Postman.PNG)
 
 4. The farm produce can be created with pre-filled values or new values can also be entered. After clicking on send,
 response is shown on the same window.
-<br>
-![Create FarmProduce](screenshots/6CreateFarmProduce.png)
+
+![Create FarmProduce](./screenshots/6CreateFarmProduce.PNG)
 
 5. The farm produces can be filtered using name( if there are multiple offers from Farmers) or just all the available 
 farm produces. The linear ID of the farm produce has to be copied to propose agreement on it.
-<br>
-![All FarmProduce](screenshots/7FarmProduceAll.png)
-![Filter FarmProduce](screenshots/8Filter.png)
+
+![All FarmProduce](./screenshots/7FarmProduceAll.PNG)
+![Filter FarmProduce](./screenshots/8Filter.PNG)
 
 6. The Buyer issues cash using Corda in-built self issue cash. It should be more than minGuaranteed Price mentioned in
 Farm Produce for agreement proposal.
 <br>
-![Issue Cash](screenshots/9IssueCash.png)
+![Issue Cash](./screenshots/9IssueCash.PNG)
 
 7. The Farm Agreement can be proposed with the copied Farm Produce Linear id. Make sure to add correct path for legal
 prose attachment .zip file.
-<br>
-![Propose FarmAgreement](screenshots/10ProposeAgreement.png)
+
+![Propose FarmAgreement](./screenshots/10ProposeAgreement.PNG)
 
 8. Farmer/Seller queries Farm Agreements and copies its Linear ID to accept the proposal.
-<br>
-![Query FarmAgreement](screenshots/11QueryFarmAgreement.png)
-![Accept FarmAgreement](screenshots/12AcceptAgreement.png)
+
+![Query FarmAgreement](./screenshots/11QueryFarmAgreement.PNG)
+![Accept FarmAgreement](./screenshots/12AcceptAgreement.PNG)
 
 9. Status of an agreement changed to IN_CONTRACT from IN_PROPOSAL after acceptance can be seen.
-<br>
-![Status FarmAgreement](screenshots/13CheckAgreementInContract.png)
+
+![Status FarmAgreement](./screenshots/13CheckAgreementInContract.PNG)
 
 10. Farm Agreement settled with its Linear ID and Agreed amount.
-<br> 
-![Settle FarmAgreement](screenshots/14SettleAgreement.png)
+
+![Settle FarmAgreement](./screenshots/14SettleAgreement.PNG)
 
 11. Status of an agreement changed to SETTLED from IN_CONTRACT.
-<br>
-![SettleStatus FarmAgreement](screenshots/15StatusSettled.png)
+
+![SettleStatus FarmAgreement](./screenshots/15StatusSettled.PNG)
 
 12. Ownership of farm produce is changed to buyer/organic market and agreed amount is transferred to seller/farmer.
 There are two methods available in API to check farm produce states: 
 To check all unconsumed states - ./farm-produce-states, 
 To check all farm produce states - ./farm-produce-states-all
-<br> 
-![Status FarmProduce](screenshots/16StatusFarmProduce.png)
-![Status FarmProduceAll](screenshots/17StatusFarmProduceAll.png)
-![Status Cash](screenshots/18CashTransfer.png)
+ 
+![Status FarmProduce](./screenshots/16StatusFarmProduce.PNG)
+![Status FarmProduceAll](./screenshots/17StatusFarmProduceAll.PNG)
+![Status Cash](./screenshots/18CashTransfer.PNG)
+
 It is assumed that negotiation between parties is happening off-chain.
 As per the Indian Farm Laws, an active agreement can be cancelled anytime. This functionality can be tested by
 proposing and accepting agreement. Then with Linear ID it can be cancelled.
