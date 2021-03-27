@@ -75,7 +75,7 @@ may use the skip button if you wish to setup the deata yourself.
 ![Run Nodes](screenshots/2RunNodes.png)
 
 2. Once the nodes are fully started, run the webserver for each node in separate command prompt windows.
-![Node Started](screenshots/3NodeStarted.png)
+![Node Started](/screenshots/3NodeStarted.png)
 ![Run Webserver](screenshots/4Webserver.png)
 
 3. After the webserver start, open the Postman to import the JSON collection to run the client.
