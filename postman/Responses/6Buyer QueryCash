@@ -1,0 +1,4 @@
+[StateAndRef(state=TransactionState(data=Cash(300000.00 INR issued by O=OrganicMarket, L=Greater Noida, ST=IN-UP, C=IN[00] at O=OrganicMarket, L=Greater Noida, ST=IN-UP, C=IN[00] owned by O=OrganicMarket, L=Greater Noida, ST=IN-UP, C=IN), contract=net.corda.finance.contracts.asset.Cash, notary=O=Notary, L=New Delhi, C=IN, encumbrance=null, constraint=SignatureAttachmentConstraint(key=EC Public Key [24:95:04:e4:ea:ba:08:3f:fc:bd:1f:67:9a:b1:31:53:37:1a:29:84]
+            X: 38d226dcd0fa574316da478aa75225e6ce18f65cbd96e60bf3c8251b1965417
+            Y: 56e5dcf7ccab21b712601ed0278501f2f33d0b5fdaa4c09e62639464e4910871
+)), ref=159EE85CA926A39F149494AAF668FFFAF95C903DE072A0F4F87C67A3612448C7(0))]

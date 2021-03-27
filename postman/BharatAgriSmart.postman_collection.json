@@ -1,0 +1,591 @@
+{
+  "info": {
+    "_postman_id": "BAS Postman collection",
+    "name": "BharatAgriSmart",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Buyer - Organic Market:Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller - Farmer:Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller:Create Farm Produce",
+      "request": {
+        "method": "PUT",
+        "header": {"Accept": "*/*"},
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/create-farmproduce?farmProduce=Paddy&weightInKG=1000&minGuaranteedPrice=3000.0&currency=INR&expectedDelivery=2021-12-11&landAddress=Karnataka&isCropInsured=true",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "create-farmproduce"
+          ],
+          "query": [
+            {
+              "key": "farmProduce",
+              "value": "Paddy"
+            },
+            {
+              "key": "weightInKG",
+              "value": "1000"
+            },
+            {
+              "key": "minGuaranteedPrice",
+              "value": "3000.0"
+            },
+            {
+              "key": "currency",
+              "value": "INR"
+            },
+            {
+              "key": "expectedDelivery",
+              "value": "2021-12-11"
+            },
+            {
+              "key": "landAddress",
+              "value": "Karnataka"
+            },
+            {
+              "key": "isCropInsured",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Filter Farm Produce",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/filter-farm-produce?farmProduceToSearch=null",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "filter-farm-produce"
+          ],
+          "query": [
+            {
+              "key": "farmProduceToSearch",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Query Farm produce All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farm-produce-states",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farm-produce-states-all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer:IssuecashINR",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/issue-cash-toself?amount=300000&currency=INR",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "issue-cash-toself"
+          ],
+          "query": [
+            {
+              "key": "amount",
+              "value": "300000"
+            },
+            {
+              "key": "currency",
+              "value": "INR"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer:QueryCash",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/cash",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "cash-balance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer:Propose Farm Agreement",
+      "request": {
+        "method": "PUT",
+        "header": {"Accept": "*/*"},
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/propose-agreement?farmProduceReferenceID=null&agreedAmount=4500.00&currency=INR&durationOfAgreement=1Y&bonusCondition=3 percent on market condition&filePath=C://Users//svijaymurali//BharatAgriSmart/workflows/legalprose.zip",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "propose-agreement"
+          ],
+          "query": [
+            {
+              "key": "farmProduceReferenceID",
+              "value": "null"
+            },
+            {
+              "key": "agreedAmount",
+              "value": "4500.00"
+            },
+            {
+              "key": "currency",
+              "value": "INR"
+            },
+            {
+              "key": "durationOfAgreement",
+              "value": "1Y"
+            },
+            {
+              "key": "bonusCondition",
+              "value": "3 percent on market condition"
+            },
+            {
+              "key": "filePath",
+              "value": "C://Users//svijaymurali//BharatAgriSmart/workflows/legalprose.zip"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller:QueryFarmAgreement",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller: Accept FarmAgreement",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/accept-agreement?farmAgreementID=null",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "accept-agreement"
+          ],
+          "query": [
+            {
+              "key": "farmAgreementID",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Check agreement status IN_CONTRACT",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller: Check agreement status IN_CONTRACT",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Settle FarmAgreement",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/settle-agreement?farmAgreementID=null&settlementAmount=4500.00&currency=INR",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "settle-agreement"
+          ],
+          "query": [
+            {
+              "key": "farmAgreementID",
+              "value": null
+            },
+            {
+              "key": "settlementAmount",
+              "value": "4500.00"
+            },
+            {
+              "key": "currency",
+              "value": "INR"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Check agreement status SETTLED",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller: Check agreement status SETTLED",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller:QueryCash",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/cash",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "cash-balance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer:QueryOwnershipOfFarmProduce",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farm-produce-states",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farm-produce-states-all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer:QueryCash",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/cash-balance",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "cash-balance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller: Cancel FarmAgreement",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/cancel-agreement?farmAgreementID=null",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "cancel-agreement"
+          ],
+          "query": [
+            {
+              "key": "farmAgreementID",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buyer: Check agreement status CANCELLED",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seller: Check agreement status CANCELLED",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10032/api/bas/farmagreements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10032",
+          "path": [
+            "api",
+            "bas",
+            "farmagreements"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Farm Produce metadata",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:10039/api/bas/farm-produce-states-meta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "10039",
+          "path": [
+            "api",
+            "bas",
+            "farm-produce-states-meta"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
