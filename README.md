@@ -83,7 +83,7 @@ may use the skip button if you wish to setup the deata yourself.
 
 3. After the webserver start, open the Postman to import the JSON collection to run the client.
 <br>
-![Postman] screenshots/5Postman.png)
+![Postman](screenshots/5Postman.png)
 
 4. The farm produce can be created with pre-filled values or new values can also be entered. After clicking on send,
 response is shown on the same window.
